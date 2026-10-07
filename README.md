@@ -1,5 +1,5 @@
 <div align="center">
-<img src="docs/cover.png" alt="Portada del portafolio de Angel Nay" width="100%" />
+<img src="./src/assets/docs/cover.png" alt="Portada del portafolio de Angel Nay" width="100%" />
 
 # ANGEL NAY — Portafolio 2026
 

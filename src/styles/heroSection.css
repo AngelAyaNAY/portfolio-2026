@@ -1,0 +1,45 @@
+.rings-back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    /* background-color: red; */
+}
+
+.ring-1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.ring-2 {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.ring-3 {
+    position: absolute;
+    z-index: 3;
+    opacity: 0.2;
+}
+
+.ring-4 {
+    position: absolute;
+    z-index: 4;
+    opacity: 1;
+    filter: drop-shadow(0px 0px 10px #e97122) drop-shadow(0px 0px 30px #e97222b2);
+}
+
+.logo_hero {
+    filter: drop-shadow(0 0 15px #e972228b);
+}
+
+.minShadow {
+    filter: drop-shadow(0 0 40px rgba(226, 112, 26, 0.25));
+}

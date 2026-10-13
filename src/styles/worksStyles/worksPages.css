@@ -1,0 +1,206 @@
+.works-pages__MAIN {
+    --hw-accent: #ff7a00;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 6rem var(--hw-pad) 5rem; */
+    background: #050505;
+    /* color: var(--hw-text); */
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.navbar-works {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.navbar-works nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.navbar-works nav.nav--close {
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.navbar-works nav .line__nav {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 1px;
+    background: #0E0E12;
+    background: linear-gradient(100deg, rgba(14, 14, 18, 0) 0%, rgba(255, 122, 0, 1) 50%, rgba(28, 20, 18, 0) 100%);
+    z-index: 1;
+}
+
+.navbar-works nav .round__nav {
+    position: absolute;
+    top: 0;
+    transform: translateY(-70%);
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #FF7A00;
+    background: radial-gradient(circle, rgba(255, 122, 0, 1) 0%, rgba(255, 122, 0, 1) 5%, rgba(255, 122, 0, 0) 62%, rgba(255, 122, 0, 0) 100%);
+    opacity: 0.8;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.navbar-works nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.navbar-works nav ul li {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+    transition: opacity 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-works nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    opacity: 0.4;
+    transition: opacity 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-works nav ul li:hover a {
+    opacity: 1;
+    text-shadow: 0 0 0.7rem rgba(255, 255, 255, 0.941);
+}
+
+.navbar-works nav ul li a.active__item {
+    opacity: 1;
+    color: var(--hw-accent);
+    text-shadow: 0 0 0.3rem #ff7a00;
+    transition: all 0.5s ease;
+}
+
+.navbar-works nav ul li:hover a.active__item {
+    opacity: 1;
+    color: #ffd3a9;
+    text-shadow: 0 0 0.8rem #ff7b00;
+}
+
+
+.navbar-works nav .cube__l,
+.navbar-works nav .cube__r {
+    position: absolute;
+    top: 0rem;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0.7;
+}
+
+.navbar-works nav .cube__l {
+    left: 0.06rem;
+}
+
+.navbar-works nav .cube__r {
+    right: 0.54rem;
+    rotate: 90deg;
+}
+
+.navbar-works nav .cube__l .line-l-l__nav,
+.navbar-works nav .cube__l .line-l-r__nav,
+.navbar-works nav .cube__r .line-l-l__nav,
+.navbar-works nav .cube__r .line-l-r__nav {
+    width: 100%;
+    height: 0.1rem;
+    background: #FF7A00;
+    background: linear-gradient(100deg, rgba(255, 122, 0, 1) 0%, rgba(255, 122, 0, 0.33) 49%, rgba(255, 122, 0, 0) 89%);
+    z-index: 10;
+    margin: 0;
+}
+
+
+.navbar-works nav .cube__l .line-l-r__nav,
+.navbar-works nav .cube__r .line-l-r__nav {
+    position: absolute;
+    left: -1.5rem;
+    top: 1.5rem;
+    transform: rotate(90deg);
+}
+
+
+
+.navbar-works .container-menu__BTN {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    width: 0.85rem;
+    height: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* background: red; */
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+
+.navbar-works .container-menu__BTN:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.navbar-works .container-menu__BTN:active {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.navbar-works .container-menu__BTN img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar-works .container-menu__BTN.active_menu {
+    opacity: 0.5;
+    transition: all 0.3s ease, rotate 0.5s ease;
+    rotate: 360deg;
+}
+
+.navbar-works .container-menu__BTN:hover.active_menu {
+    opacity: 1;
+}
+
+.navbar-works .container-menu__BTN:active.active_menu {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.active_menu__gradient {
+    opacity: 1;
+    background: #0E0E12;
+    background: linear-gradient(0deg, rgba(14, 14, 18, 0) 0%, rgba(14, 14, 18, 0.74) 70%, rgba(28, 20, 18, 1) 100%);
+    transition: all 1s ease;
+}

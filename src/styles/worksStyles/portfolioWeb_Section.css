@@ -1,0 +1,241 @@
+.portf__MAIN {
+    --border-color-01: #ffca9823;
+    --border-color-02: #ffca983e;
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #0B0A0B;
+    position: relative;
+}
+
+.portf__MAIN .text-top {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    /* background: red; */
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+.portf__MAIN .text-portfolio {
+    display: inline-block;
+    white-space: nowrap;
+    color: #ff7a00;
+    margin: 0;
+    font-size: 16em;
+    font-weight: 800;
+    /* text-shadow: 0 0 0.3rem #ff7a00; */
+    transition: all 0.5s ease;
+    letter-spacing: 0.15em;
+    line-height: 0.4em;
+    font-family: 'Cormorant Garamond', Cormorant, Georgia, serif;
+    transform: translateY(-30%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+/*--------------------------------- CONTENT PORTFOLIO ---------------------------------*/
+/*---- CARDS SELECTS HEADER ----*/
+.content-items {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    z-index: 1;
+    gap: 1rem;
+    /* background-color: red; */
+}
+
+.header-contet {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3.5rem 2rem 0.5rem 2rem;
+    width: fit-content;
+}
+
+.header-contet .portfolio-sub-txt {
+    font-size: 2.7rem;
+    color: #ffff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.3rem #ffa048ad, 0 0 1rem #ffffff8e, 0 0 1.6rem #ffffff9a;
+}
+
+.portfolio-sign-txt {
+    font-size: 1.3rem;
+    color: #ff7a00;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 0.4rem #ff993ab8, 0 0 0.8rem #ff7b00cb, 0 0 1rem #ff7b004f;
+}
+
+/*---- CARDS SELECTS / CARDS----*/
+.cards-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    align-items: center;
+    padding: 1.1rem 1rem;
+    gap: 1rem;
+    border-top: var(--border-color-01) 1px solid;
+    border-bottom: var(--border-color-01) 1px solid;
+    border-right: var(--border-color-01) 1px solid;
+    border-radius: 0rem 2rem 2rem 0rem;
+    background-color: #0B0A0B;
+}
+
+
+.cards-container .next-btn,
+.cards-container .back-btn {
+    position: absolute;
+    padding: 0.25rem 0.3rem;
+    background-color: #ff7a00;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #0B0A0B;
+    font-weight: bolder !important;
+    transition: background-color 0.4s ease;
+    line-height: 0 !important;
+    vertical-align: 0 !important;
+    z-index: 20;
+}
+
+.cards-container .next-btn:hover,
+.cards-container .back-btn:hover {
+    background-color: #ff5e00;
+}
+
+.cards-container .next-btn:active,
+.cards-container .back-btn:active {
+    background-color: #ff7a00;
+}
+
+
+.cards-container .next-btn {
+    left: 0.5rem;
+}
+
+.cards-container .back-btn {
+    right: 0.5rem;
+}
+
+
+.cards-container .next-btn i {
+    margin-right: 0.6rem;
+}
+
+.cards-container .back-btn i {
+    margin-left: 0.6rem;
+}
+
+/*---- CARDS SELECTS / CARDS CONTENT----*/
+.cards-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+.cards-list .card__item {
+    position: relative;
+    width: 14rem;
+    min-width: 14rem;
+    height: 100%;
+    background-color: #0B0A0B;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    border: 1px solid var(--border-color-01);
+    cursor: pointer;
+    transition: border 0.5s ease;
+}
+
+.cards-list .card__item:hover {
+    border: 1px solid var(--border-color-02);
+}
+
+.cards-list .card__item:active {
+    border: 1px solid var(--border-color-01);
+}
+
+.cards-list .card__item .back-image {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: red; */
+}
+
+.cards-list .card__item .back-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards-list .card__item .front-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #0b0a0bbb;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+
+.cards-list .card__item:hover .front-select {
+    opacity: 1;
+}
+
+.cards-list .card__item:active .front-select {
+    opacity: 0.7;
+}
+
+.cards-list .card__item .front-select span {
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cards-list .card__item .front-select img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transform: scale(1.1);
+    opacity: 0.7;
+    rotate: 30deg;
+    transition: all 0.3s ease-out;
+}
+
+
+.cards-list .card__item:hover .front-select img {
+    rotate: 0deg;
+    transform: scale(1.3);
+}

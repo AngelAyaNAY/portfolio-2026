@@ -1,0 +1,51 @@
+{
+    "all_works_items": [
+        {
+            "id": 1,
+            "title": "Featured Projects",
+            "sub_title": "Featured Projects for usage",
+            "description": "Designed and developed a high-impact marketing website with a polished visual system, strong calls to action, and a conversion-first content structure.",
+            "cover-image-name": "Image_use_1",
+            "works": [
+                {
+                    "id": "aurora-landing",
+                    "title": "Aurora Landing",
+                    "category": "Web Design",
+                    "year": 2026,
+                    "client": "Aurora Studio",
+                    "summary": "A premium SaaS landing page focused on conversion and storytelling.",
+                    "technologies": [
+                        "React",
+                        "Tailwind CSS",
+                        "Framer Motion"
+                    ],
+                    "url": "https://example.com/aurora-landing",
+                    "image": "/images/works/aurora-landing.jpg"
+                },
+                {
+                    "id": "northstar-brand",
+                    "title": "Northstar Brand",
+                    "category": "Brand Identity",
+                    "year": 2025,
+                    "client": "Northstar Labs",
+                    "summary": "Brand identity and messaging system for a fast-growing AI startup.",
+                    "description": "Created a complete brand toolkit including logo concepts, typography, voice, and launch assets to position the business in a competitive market.",
+                    "technologies": [
+                        "Brand Strategy",
+                        "Figma",
+                        "Art Direction"
+                    ],
+                    "url": "https://example.com/northstar-brand",
+                    "image": "/images/works/northstar-brand.jpg"
+                }
+            ],
+            "tags": ["Vercel", "Photoshop", "CSS", "Front-End", "Portfolio", "Usage"],
+            "stats": {
+                "views": 10000,
+                "likes": 100,
+                "comments": 50
+            },
+            "link-poject": "https://angelnay.vercel.app/"
+        }
+    ]
+}

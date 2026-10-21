@@ -3,6 +3,7 @@ import ICON_IMG from '../../assets/icons/menu_min.png'
 import { useState } from 'react';
 import HeroWorks from '../../components/work/HeroWork_Section'
 import PortfolioWeb_Section from '../../components/work/PortfolioWeb_Section';
+import AllWorks_Section from '../../components/work/AllWorks_Section';
 
 const WorksPages = () => {
     const [isMenuActive, setIsMenuActive] = useState(false);
@@ -43,7 +44,7 @@ const WorksPages = () => {
                 <PortfolioWeb_Section />
             </div>
             <div id="stage__3">
-
+                <AllWorks_Section />
             </div>
         </div>
     )

@@ -82,9 +82,9 @@ const PortfolioWeb_Section = () => {
 
     return (
         <div className="portf__MAIN">
-            <div className="text-top">
+            {/* <div className="text-top">
                 <h1 className="text-portfolio">PORTAFOLIO</h1>
-            </div>
+            </div> */}
             <div className="container__portfolio">
                 <div className="content-items">
                     <div className="header-contet">
